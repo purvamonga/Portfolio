@@ -10,7 +10,6 @@ import Background from "./components/Background"; // Your custom background comp
 import Project from "./components/Project"; // Import the Project component
 import Education from "./components/Education";
 import Certifications from "./components/Certifications";
-import Contact from "./components/Contact";
 import Articles from "./components/Articles";
 
 const App: React.FC = () => {
@@ -48,7 +47,6 @@ const App: React.FC = () => {
     { href: "#projects", label: "Projects" }, // Added this link for the Projects section
     { href: "#experience", label: "Experience" },
     { href: "#articles", label: "Articles" },
-    { href: "#contact", label: "Contact" },
   ];
 
   const footerRightLinks = [
@@ -73,7 +71,6 @@ const App: React.FC = () => {
         <Experience isDarkMode={isDarkMode} />
         <Certifications isDarkMode={isDarkMode} />
         <Articles isDarkMode={isDarkMode} />
-        <Contact isDarkMode={isDarkMode} />
       </main>
       <Footer
         leftLinks={footerLeftLinks}
