@@ -1,7 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Default from "../assets/Default.jpg";
-import VKJ from "../assets/VKJ.jpg";
-import Portfolio from "../assets/Portfolio.jpg";
 
 // Define the interface for a single project
 interface Project {
