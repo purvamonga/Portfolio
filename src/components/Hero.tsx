@@ -70,14 +70,19 @@ const Hero: React.FC<HeroProps> = ({ isDarkMode }) => {
   <div id="intro" className="pb-4 lg:mb-36">
     <div className="flex flex-col-reverse lg:flex-row items-center gap-8" style={{ fontFamily: 'Outfit' }}>
       
-      {/* Text Section */}
-      <div className="w-full lg:w-2/3 text-center lg:text-left">
-        
-        {/* Name */}
+      {/* Text Section — SEO: itemScope Person schema */}
+      <div
+        className="w-full lg:w-2/3 text-center lg:text-left"
+        itemScope
+        itemType="https://schema.org/Person"
+      >
+        {/* H1 — primary keyword: AI ML developer India */}
         <div className="text-[1.875rem] sm:text-[2.25rem] md:text-[3rem] lg:text-[5rem] font-bold">
           <h1
             className={`${isDarkMode ? "text-white" : "text-black"}`}
             style={{ display: "inline-block", fontFamily: "Raleway" }}
+            itemProp="name"
+            aria-label="Purva Monga — AI/ML Developer and Data Science Portfolio"
           >
             Purva
           </h1>
@@ -89,33 +94,52 @@ const Hero: React.FC<HeroProps> = ({ isDarkMode }) => {
           variants={containerVariants}
           viewport={{ once: true }}
         >
-          {/* Title */}
+          {/* H2 subtitle — secondary keyword: machine learning deep learning data science */}
           <div className="text-[1.25rem] sm:text-[1.5rem] md:text-[1.875rem] lg:text-[2.25rem] font-semibold mt-2">
-            <motion.span
+            <motion.h2
               variants={childVariants}
               className={`bg-gradient-to-r ${
                 isDarkMode
                   ? "from-stone-300 to-stone-600"
                   : "from-black to-gray-700"
               } bg-clip-text text-transparent`}
+              itemProp="jobTitle"
             >
               <ShinyText text="AI/ML Enthusiast & Developer" />
-            </motion.span>
+            </motion.h2>
           </div>
 
-          {/* Paragraph */}
-          <div className="text-[1rem] sm:text-[1.125rem] md:text-[1.25rem] font-light mt-3 px-2 sm:px-0">
+          {/* Bio — SEO: keyword-rich description with schema itemProp */}
+          <div
+            className="text-[1rem] sm:text-[1.125rem] md:text-[1.25rem] font-light mt-3 px-2 sm:px-0"
+            itemProp="description"
+          >
             <motion.p
               variants={childVariants}
               className={`${isDarkMode ? "text-stone-300" : "text-gray-700"} font-outfit`}
             >
-              I’m an undergraduate student based in <strong className={isDarkMode ? "text-blue-400" : "text-blue-700"}>India</strong>, passionate about machine learning, deep learning, and data analysis.
+              I'm an undergraduate{" "}
+              <strong className={isDarkMode ? "text-blue-400" : "text-blue-700"}>
+                machine learning &amp; AI developer
+              </strong>{" "}
+              based in{" "}
+              <span itemProp="addressLocality">
+                <strong className={isDarkMode ? "text-blue-400" : "text-blue-700"}>India</strong>
+              </span>
+              , passionate about{" "}
+              <strong>deep learning</strong>, <strong>data science</strong>, and building
+              intelligent systems that solve real-world problems.
             </motion.p>
             <motion.p
               variants={childVariants}
               className={`${isDarkMode ? "text-stone-300" : "text-gray-700"} mt-2 font-outfit`}
             >
-              With experience in Python, CNNs, and full-stack development (Node.js, React), I love building AI solutions for real-world applications and crafting seamless digital experiences.
+              With hands-on experience in{" "}
+              <strong>Python</strong>,{" "}
+              <strong>Convolutional Neural Networks (CNNs)</strong>, and full-stack development
+              using <strong>React</strong> &amp; <strong>Node.js</strong>, I build end-to-end
+              <strong> AI solutions</strong> — from data preprocessing pipelines to production-ready
+              web applications.
             </motion.p>
             <motion.p
               variants={childVariants}
@@ -125,20 +149,33 @@ const Hero: React.FC<HeroProps> = ({ isDarkMode }) => {
             </motion.p>
           </div>
 
-          {/* Resume Button */}
-          <div className="mt-5">
+          {/* Resume CTA — aria-label for accessibility & crawlability */}
+          <div className="mt-5 flex flex-wrap gap-3 justify-center lg:justify-start">
             <motion.a
               variants={childVariants}
               href={PLACEHOLDER_RESUME_PDF}
               target="_blank"
               rel="noopener noreferrer"
-              className={`px-4 py-2 font-semibold rounded-md transition-all ${
+              aria-label="View Purva Monga's Machine Learning Resume (PDF)"
+              className={`px-5 py-2.5 font-semibold rounded-md transition-all ${
                 isDarkMode
                   ? "bg-stone-300 text-black hover:bg-stone-400"
                   : "bg-black text-white hover:bg-gray-800"
               }`}
             >
               View Resume
+            </motion.a>
+            <motion.a
+              variants={childVariants}
+              href="#articles"
+              aria-label="Read Purva Monga's data science and machine learning articles"
+              className={`px-5 py-2.5 font-semibold rounded-md border transition-all ${
+                isDarkMode
+                  ? "border-stone-400 text-stone-300 hover:bg-stone-800"
+                  : "border-gray-800 text-gray-800 hover:bg-gray-100"
+              }`}
+            >
+              Read Articles
             </motion.a>
           </div>
         </motion.div>
