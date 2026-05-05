@@ -38,29 +38,36 @@ const useInView = (threshold = 0.2) => {
 const Experience: React.FC<ExperienceProps> = ({ isDarkMode }) => {
     const experiences: ExperienceItem[] = [
         {
-            year: "Jun 2025 – Present",
-            role: "Full-stack Developer",
-            company: "Weblicious (Internship)",
-            description: `Working on modern MERN stack applications in a hybrid role. Involved in front-end and back-end feature development, REST API integration, and UI enhancements for live projects.`,
-            technologies: ["MERN Stack", "MongoDB", "React.js", "Express.js", "Node.js"],
+            year: "Mar 2026 – Present",
+            role: "Trainee",
+            company: "PwC Advisory Launchpad",
+            description: `Apply consulting frameworks, market research, and data analysis techniques to evaluate business challenges and support solution-driven recommendations.
+Strengthen analytical thinking, stakeholder communication, and problem-solving skills through case-based assignments and advisory-focused training modules.`,
+            technologies: ["Analytical Thinking", "Consulting", "Data Analysis", "Problem Solving"],
         },
         {
-            year: "Sep 2024 – Present",
-            role: "Public Relations & Sponsorship",
-            company: "UPES CSA Student Chapter",
-            description: `Head of Sponsorship (May 2025 – Present): Leading the Sponsorship and PR committee. Managing partnerships, proposals, and outreach to drive student initiatives and secure resources.
-
-Public Relation Lead (Mar 2025 – May 2025): Oversaw PR campaign execution, supervised the PR team, and ensured smooth communication for event success.
-
-PR Core Team Member (Sep 2024 – Mar 2025): Managed event promotion and communication. Contributed to content, design, and stakeholder engagement.`,
-            technologies: ["Sponsorship", "Public Relations", "Leadership", "Teamwork", "Communication"],
+            year: "Jun 2025 – Jul 2025",
+            role: "Web Development Intern",
+            company: "TechQuint Services and Consulting",
+            description: `Engineered backend services using Node.js and Express.js.
+Contributed to full development lifecycle.
+Enhanced application scalability and reliability through modular backend architecture.`,
+            technologies: ["Node.js", "Express.js", "Backend Architecture"],
         },
         {
-            year: "Sep 2024 – Apr 2025",
-            role: "Technical Team Member",
-            company: "UPES-Hypervision",
-            description: `Contributed to the development and execution of technical activities and event solutions. Helped organize student tech meets and delivered scalable solutions using modern tech stacks.`,
-            technologies: ["JavaScript", "React.js", "Teamwork", "Communication"],
+            year: "May 2025 – Present",
+            role: "President",
+            company: "UPES Hypervision",
+            description: `Led a 100+ member student organization, managing operations and strategic planning.
+Organized 5+ university-level events including Smart India Hackathon and ICMLDE 4.0 with 200+ participants.`,
+            technologies: ["Leadership", "Event Management", "Strategic Planning"],
+        },
+        {
+            year: "May 2024 – May 2025",
+            role: "Design Head",
+            company: "UPES Hypervision",
+            description: `Managed design execution for 10+ events, ensuring consistent branding and visual identity.`,
+            technologies: ["Design Execution", "Visual Identity", "Branding"],
         },
     ];
 

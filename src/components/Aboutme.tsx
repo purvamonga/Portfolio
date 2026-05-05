@@ -22,12 +22,12 @@ const AboutMe: React.FC<AboutMeProps> = ({ isDarkMode }) => {
 
     // Object containing different descriptions based on the selected role
     const content: Content = {
-        anyone: "I turn caffeine and curiosity into clever code, bold ideas, and digital experiences that make people pause—and say wow.",
-        recruiter: "I’m a third-year CSE student with a passion for solving real-world problems through innovative design and full-stack development.",
+        anyone: "I turn caffeine and curiosity into clever code, bold AI models, and digital experiences that make people pause—and say wow.",
+        recruiter: "I’m a Computer Science undergraduate with hands-on experience in machine learning, deep learning, and data analysis.",
         designDirector: "I explore bold, unconventional ideas that challenge visual norms and turn design into memorable experiences.",
         productDesigner: "With a strong design instinct and tech foundation, I craft interfaces that are as intuitive as they are impactful.",
-        productManager: "I thrive at the intersection of design, development, and collaboration—bringing visionary ideas to life through structured execution.",
-        engineer: "As a CS student with a creative mindset, I ensure that every design I touch is not only visually distinct but also technically sound."
+        productManager: "I thrive at the intersection of AI, development, and collaboration—bringing visionary ideas to life through structured execution.",
+        engineer: "As a CS student with a passion for AI/ML, I ensure that every solution I build is not only visually distinct but also technically robust."
     };
 
     // Ref for the container that VariableProximity will operate within

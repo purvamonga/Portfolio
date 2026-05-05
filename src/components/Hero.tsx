@@ -5,7 +5,7 @@ import { motion } from "framer-motion"; // Assuming framer-motion is available i
 const PLACEHOLDER_AVATAR = "https://placehold.co/200x200/FF5733/FFFFFF?text=Profile";
 import Profile from "../assets/Profile.jpg";
 // Placeholder for resume PDF
-const PLACEHOLDER_RESUME_PDF = "https://www.africau.edu/images/default/sample.pdf";
+const PLACEHOLDER_RESUME_PDF = "/Purva(ML)_Samsung.pdf";
 
 import ProfileCard from "./ui/ProfileCard";
 
@@ -79,7 +79,7 @@ const Hero: React.FC<HeroProps> = ({ isDarkMode }) => {
             className={`${isDarkMode ? "text-white" : "text-black"}`}
             style={{ display: "inline-block", fontFamily: "Raleway" }}
           >
-            Pulkit Tiwari
+            Purva
           </h1>
         </div>
 
@@ -99,7 +99,7 @@ const Hero: React.FC<HeroProps> = ({ isDarkMode }) => {
                   : "from-black to-gray-700"
               } bg-clip-text text-transparent`}
             >
-              <ShinyText text="Software Engineer" />
+              <ShinyText text="AI/ML Enthusiast & Developer" />
             </motion.span>
           </div>
 
@@ -109,13 +109,13 @@ const Hero: React.FC<HeroProps> = ({ isDarkMode }) => {
               variants={childVariants}
               className={`${isDarkMode ? "text-stone-300" : "text-gray-700"} font-outfit`}
             >
-              I’m a Software Engineer based in <strong className={isDarkMode ? "text-blue-400" : "text-blue-700"}>India</strong>, passionate about crafting intuitive, secure, and high-performance digital solutions.
+              I’m an undergraduate student based in <strong className={isDarkMode ? "text-blue-400" : "text-blue-700"}>India</strong>, passionate about machine learning, deep learning, and data analysis.
             </motion.p>
             <motion.p
               variants={childVariants}
               className={`${isDarkMode ? "text-stone-300" : "text-gray-700"} mt-2 font-outfit`}
             >
-              From building responsive frontends to architecting reliable backends, I love transforming ideas into real-world applications. With a keen focus on Cybersecurity, I integrate best practices to safeguard systems and ensure data integrity.
+              With experience in Python, CNNs, and full-stack development (Node.js, React), I love building AI solutions for real-world applications and crafting seamless digital experiences.
             </motion.p>
             <motion.p
               variants={childVariants}
@@ -149,9 +149,9 @@ const Hero: React.FC<HeroProps> = ({ isDarkMode }) => {
         <ProfileCard
           avatarUrl={Profile}
           miniAvatarUrl="https://img.icons8.com/?size=100&id=BrU2BBoRXiWq&format=png&color=000000"
-          name="Pulkit Tiwari"
-          title="Software Engineer"
-          handle="_pulkittiwari"
+          name="Purva"
+          title="AI/ML Enthusiast"
+          handle="purvamonga"
           status="Available"
           contactText="Let's Talk"
           onContactClick={() => console.log("Contact button clicked!")}

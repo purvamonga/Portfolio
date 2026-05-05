@@ -183,8 +183,8 @@ const Footer: React.FC<FooterProps> = ({
                 {/* Footer Content - Centralized */}
                 <div className="flex flex-col w-full md:flex-row items-center text-center justify-center md:gap-x-16 px-4 md:px-30 gap-8">
                     <div className="space-y-1 md:w-1/3 text-center ">
-                        {/* Pulkit Tiwari Heading - explicitly white in dark mode, black in light mode */}
-                        <h3 className={`text-xl font-semibold ${isDarkMode ? 'text-white' : 'text-gray-400'}`}>Pulkit Tiwari</h3>
+                        {/* Purva Heading - explicitly white in dark mode, black in light mode */}
+                        <h3 className={`text-xl font-semibold ${isDarkMode ? 'text-white' : 'text-gray-400'}`}>Purva</h3>
                         {/* Conditional text color for description */}
                         <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-400'}`}>
                             Passionate developer building seamless digital experiences.

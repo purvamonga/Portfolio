@@ -1,6 +1,5 @@
 {
   "name": "portfolio",
-  "homepage": "https://PulkitTiwari51.github.io/Portfolio-v2/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,11 +9,13 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
-
+    "deploy": "gh-pages -d dist",
+    "start": "node server.js"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
     "framer-motion": "^12.23.1",
     "gh-pages": "^6.3.0",
     "gsap": "^3.13.0",

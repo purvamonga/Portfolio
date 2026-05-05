@@ -8,6 +8,10 @@ import Hero from "./components/Hero";
 import Hello from "./components/Hello";
 import Background from "./components/Background"; // Your custom background component
 import Project from "./components/Project"; // Import the Project component
+import Education from "./components/Education";
+import Certifications from "./components/Certifications";
+import Contact from "./components/Contact";
+import Articles from "./components/Articles";
 
 const App: React.FC = () => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
@@ -43,6 +47,7 @@ const App: React.FC = () => {
     { href: "#technologies", label: "Technologies" },
     { href: "#projects", label: "Projects" }, // Added this link for the Projects section
     { href: "#experience", label: "Experience" },
+    { href: "#articles", label: "Articles" },
     { href: "#contact", label: "Contact" },
   ];
 
@@ -62,15 +67,18 @@ const App: React.FC = () => {
       <main className="relative lg:ml-20 z-10"> {/* Add margin-left for sidebar, ensure content is above background */}
         <Hero isDarkMode={isDarkMode} />
         <AboutMe isDarkMode={isDarkMode} />
+        <Education isDarkMode={isDarkMode} />
         <Technologies isDarkMode={isDarkMode} />
         <Project isDarkMode={isDarkMode} /> {/* Add the Project component here */}
         <Experience isDarkMode={isDarkMode} />
-        {/* Add other sections here if needed */}
+        <Certifications isDarkMode={isDarkMode} />
+        <Articles isDarkMode={isDarkMode} />
+        <Contact isDarkMode={isDarkMode} />
       </main>
       <Footer
         leftLinks={footerLeftLinks}
         rightLinks={footerRightLinks}
-        copyrightText={`© ${new Date().getFullYear()} Pulkit Tiwari. All rights reserved.`}
+        copyrightText={`© ${new Date().getFullYear()} Purva. All rights reserved.`}
       />
     </div>
   );

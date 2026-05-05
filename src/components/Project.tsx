@@ -13,49 +13,24 @@ interface Project {
   category: string; // Added category for filtering
 }
 
-// Dummy project data
+// Purva's project data
 const projectsData: Project[] = [
   {
     id: '1',
-    name: 'Web Crawler',
-    date: '2023', // Simplified date for UI consistency
-    githubLink: 'https://github.com/PulkitTiwari51/webcrawler',
+    name: 'Sahaya AI - Career Platform',
+    date: '2023',
+    githubLink: '#',
     imageUrl: Default,
-    category: 'Utility',
+    category: 'Full Stack AI',
   },
   {
     id: '2',
-    name: 'VKJ Projects',
-    date: '2025',
-    githubLink: 'https://github.com/PulkitTiwari51/VKJ',
-    imageUrl: VKJ,
-    category: 'Web Development',
-  },
-  {
-    id: '3',
-    name: 'Personal Portfolio vs.1',
+    name: 'Music Genre & Mood Classification',
     date: '2023',
-    githubLink: 'https://github.com/PulkitTiwari51/Portfolio',
-    imageUrl: Portfolio,
-    category: 'Web Development', // Category for Web Design
-  },
-  {
-    id: '4',
-    name: 'Amazon.com Clone',
-    date: '2023',
-    githubLink: 'https://github.com/PulkitTiwari51/Amazon_Clone_Frontend',
+    githubLink: '#',
     imageUrl: Default,
-    category: 'Web Development',
-  },
-  {
-    id: '5',
-    name: 'Capstone Project Java',
-    date: '2025',
-    githubLink: 'https://github.com/PulkitTiwari51/Capstone-Project-2',
-    imageUrl: Default,
-    category: 'Web Development',
-  },
-
+    category: 'Machine Learning',
+  }
 ];
 
 // ProjectItem Component: Represents a single project row
